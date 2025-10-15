@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rolland Delhorbe - Développeur PHP Senior, Expert Laravel & Symfony. Développement web, coaching technique et accompagnement tech/business." />
+  <title>CoreCraft - Rolland Delhorbe | Dev PHP Senior & Technical Coach</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased">
+  
+  <!-- Header / Navigation -->
+  <header class="fixed w-full top-0 bg-white/90 backdrop-blur-md shadow-sm z-50">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#hero" class="flex items-center space-x-3">
+        <img src="/logo.png" alt="CoreCraft Logo" class="h-10 w-auto">
+        <div class="text-2xl font-bold text-gray-900">
+          Core<span class="text-orange-600">Craft</span>
+        </div>
+      </a>
+      
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-8 text-gray-700 font-medium">
+        <li><a href="#about" class="hover:text-orange-600 transition">À propos</a></li>
+        <li><a href="#services" class="hover:text-orange-600 transition">Services</a></li>
+        <li><a href="#stack" class="hover:text-orange-600 transition">Expertise</a></li>
+        <li><a href="#contact" class="hover:text-orange-600 transition">Contact</a></li>
+      </ul>
+      
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <ul class="px-6 py-4 space-y-3 text-gray-700 font-medium">
+        <li><a href="#about" class="block hover:text-orange-600 transition">À propos</a></li>
+        <li><a href="#services" class="block hover:text-orange-600 transition">Services</a></li>
+        <li><a href="#stack" class="block hover:text-orange-600 transition">Expertise</a></li>
+        <li><a href="#contact" class="block hover:text-orange-600 transition">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white pt-20">
+    <div class="max-w-6xl mx-auto px-6 text-center fade-in">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        Créons ensemble une solution<br/>
+        <span class="text-orange-400">digitale adaptée à vos besoins</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+        Développeur back-end • 15 ans d'expérience<br/>
+        Accompagnement tech & business
+      </p>
+      <a href="#contact" class="btn-primary inline-block">
+        Parlons de votre projet
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-container fade-in">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-8 text-center">À propos</h2>
+      <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
+        <p>
+          Développeur back-end avec près de <strong>15 ans d'expérience</strong>, je me suis spécialisé dans la maîtrise du langage <strong>PHP</strong> sans être lié à un framework, ce qui me permet de m'adapter aux projets que l'on me propose.
+        </p>
+        <p>
+          Mes expériences variées m'ont permis de développer mes compétences sur des technologies comme <strong>Elasticsearch, RabbitMQ, Redis</strong>, et bien d'autres. Durant mon passage par la <strong>Police Technique et Scientifique</strong>, j'ai acquis de solides compétences en algorithmie, notamment sur un sujet de pointe : la comparaison ADN.
+        </p>
+        <p>
+          Je suis quelqu'un de <strong>profondément curieux</strong>, toujours en quête de nouvelles techniques et méthodologies qui pourraient améliorer mon travail et les projets sur lesquels je suis impliqué.
+        </p>
+        <p>
+          J'affectionne particulièrement les <strong>projets de conception avancée ou de R&D</strong>, mais je m'engage aussi auprès des <strong>TPE/PME</strong> pour les aider à se concentrer sur leur business (site vitrine, solution de gestion interne, CRM, planning...) et des <strong>associations</strong>.
+        </p>
+        <p class="text-xl font-semibold text-orange-600">
+          Je vous propose de vous accompagner dans vos projets de toute taille et de vous aider à faire les bons choix en vous apportant mon expérience et ma rigueur.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-6 mt-12">
+        <div class="card text-center">
+          <h3 class="font-bold text-xl mb-2">🎯 Tarifs</h3>
+          <p class="text-gray-700 font-semibold">À partir de 480 €/jour</p>
+          <p class="text-gray-600 text-sm mt-1">Adaptable selon votre projet</p>
+        </div>
+        <div class="card text-center">
+          <h3 class="font-bold text-xl mb-2">📍 Localisation</h3>
+          <p class="text-gray-700">Vexin • Remote-friendly</p>
+        </div>
+        <div class="card text-center">
+          <h3 class="font-bold text-xl mb-2">💼 Statut</h3>
+          <p class="text-gray-700">Micro-entrepreneur</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-100 section-container fade-in">
+    <h2 class="text-4xl font-bold mb-6 text-center">Mon approche</h2>
+    <p class="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+      De la définition de vos besoins métiers à la conception d'une solution pérenne, je vous accompagne à chaque étape de votre projet.
+    </p>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      
+      <div class="card">
+        <div class="text-4xl mb-4">🎯</div>
+        <h3 class="text-xl font-bold mb-3">Définir vos besoins</h3>
+        <p class="text-gray-600">
+          Nous définissons ensemble vos besoins métiers. Je suis force de proposition pour vos fonctionnalités.
+        </p>
+      </div>
+      
+      <div class="card">
+        <div class="text-4xl mb-4">🏗️</div>
+        <h3 class="text-xl font-bold mb-3">Concevoir pour durer</h3>
+        <p class="text-gray-600">
+          Je conçois une solution pour le long terme, en privilégiant qualité, maintenabilité et évolutivité.
+        </p>
+      </div>
+      
+      <div class="card">
+        <div class="text-4xl mb-4">🤝</div>
+        <h3 class="text-xl font-bold mb-3">Collaborer</h3>
+        <p class="text-gray-600">
+          Je me rends disponible pour vous tout le long de notre collaboration, avec rigueur et transparence.
+        </p>
+      </div>
+      
+      <div class="card">
+        <div class="text-4xl mb-4">🚀</div>
+        <h3 class="text-xl font-bold mb-3">Faire les bons choix</h3>
+        <p class="text-gray-600">
+          Je vous apporte mon expérience pour vous aider à faire les choix techniques et stratégiques adaptés.
+        </p>
+      </div>
+      
+    </div>
+    
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-2xl font-bold mb-6 text-center">Mes domaines d'intervention</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <div class="bg-white rounded-lg p-6 border-l-4 border-orange-600">
+          <h4 class="font-bold text-lg mb-2">💼 TPE/PME</h4>
+          <p class="text-gray-600">Sites vitrine, solutions de gestion interne, CRM, planning, outils métiers sur-mesure</p>
+        </div>
+        
+        <div class="bg-white rounded-lg p-6 border-l-4 border-green-600">
+          <h4 class="font-bold text-lg mb-2">🧪 R&D & Conception</h4>
+          <p class="text-gray-600">Projets complexes, architectures avancées, algorithmie, POC techniques</p>
+        </div>
+        
+        <div class="bg-white rounded-lg p-6 border-l-4 border-purple-600">
+          <h4 class="font-bold text-lg mb-2">🤝 Associations & Collectivités</h4>
+          <p class="text-gray-600">Accompagnement solidaire, solutions digitales au service de l'intérêt général</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Stack & Expertise Section -->
+  <section id="stack" class="section-container fade-in">
+    <h2 class="text-4xl font-bold mb-4 text-center">Stack technique & Expertise</h2>
+    <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+      Une sélection des technologies et méthodologies que je maîtrise pour donner vie à vos projets.
+    </p>
+    
+    <div class="max-w-5xl mx-auto">
+      
+      <!-- Tech Logos Showcase -->
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-12 items-center justify-items-center">
+        <div class="flex flex-col items-center group">
+          <img src="https://cdn.simpleicons.org/php/777BB4" alt="PHP" class="w-16 h-16 mb-2 transition-transform group-hover:scale-110">
+          <span class="text-sm text-gray-600 font-medium">PHP</span>
+        </div>
+        <div class="flex flex-col items-center group">
+          <img src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel" class="w-16 h-16 mb-2 transition-transform group-hover:scale-110">
+          <span class="text-sm text-gray-600 font-medium">Laravel</span>
+        </div>
+        <div class="flex flex-col items-center group">
+          <img src="https://cdn.simpleicons.org/symfony/000000" alt="Symfony" class="w-16 h-16 mb-2 transition-transform group-hover:scale-110">
+          <span class="text-sm text-gray-600 font-medium">Symfony</span>
+        </div>
+        <div class="flex flex-col items-center group">
+          <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" class="w-16 h-16 mb-2 transition-transform group-hover:scale-110">
+          <span class="text-sm text-gray-600 font-medium">Docker</span>
+        </div>
+        <div class="flex flex-col items-center group">
+          <img src="https://cdn.simpleicons.org/git/F05032" alt="Git" class="w-16 h-16 mb-2 transition-transform group-hover:scale-110">
+          <span class="text-sm text-gray-600 font-medium">Git</span>
+        </div>
+        <div class="flex flex-col items-center group">
+          <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="TailwindCSS" class="w-16 h-16 mb-2 transition-transform group-hover:scale-110">
+          <span class="text-sm text-gray-600 font-medium">Tailwind</span>
+        </div>
+        <div class="flex flex-col items-center group">
+          <img src="https://cdn.simpleicons.org/redis/DC382D" alt="Redis" class="w-16 h-16 mb-2 transition-transform group-hover:scale-110">
+          <span class="text-sm text-gray-600 font-medium">Redis</span>
+        </div>
+        <div class="flex flex-col items-center group">
+          <img src="https://cdn.simpleicons.org/rabbitmq/FF6600" alt="RabbitMQ" class="w-16 h-16 mb-2 transition-transform group-hover:scale-110">
+          <span class="text-sm text-gray-600 font-medium">RabbitMQ</span>
+        </div>
+        <div class="flex flex-col items-center group">
+          <img src="https://cdn.simpleicons.org/elasticsearch/005571" alt="Elasticsearch" class="w-16 h-16 mb-2 transition-transform group-hover:scale-110">
+          <span class="text-sm text-gray-600 font-medium">Elasticsearch</span>
+        </div>
+        <div class="flex flex-col items-center group">
+          <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL" class="w-16 h-16 mb-2 transition-transform group-hover:scale-110">
+          <span class="text-sm text-gray-600 font-medium">PostgreSQL</span>
+        </div>
+        <div class="flex flex-col items-center group">
+          <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" class="w-16 h-16 mb-2 transition-transform group-hover:scale-110">
+          <span class="text-sm text-gray-600 font-medium">MySQL</span>
+        </div>
+        <div class="flex flex-col items-center group">
+          <img src="https://cdn.simpleicons.org/gitlab/FC6D26" alt="GitLab" class="w-16 h-16 mb-2 transition-transform group-hover:scale-110">
+          <span class="text-sm text-gray-600 font-medium">GitLab CI/CD</span>
+        </div>
+      </div>
+      
+      <!-- Accordéon Toggle -->
+      <div class="text-center mb-8">
+        <button id="toggle-stack" class="text-orange-600 hover:text-orange-700 font-semibold underline">
+          Voir le détail complet →
+        </button>
+      </div>
+      
+      <!-- Stack Summary (visible) -->
+      <div id="stack-summary" class="grid md:grid-cols-3 gap-6">
+        <div class="card text-center">
+          <h3 class="font-bold text-xl mb-3">💻 Langages</h3>
+          <p class="text-gray-600">PHP 8.3+, JavaScript, HTML/CSS</p>
+        </div>
+        <div class="card text-center">
+          <h3 class="font-bold text-xl mb-3">🧩 Frameworks</h3>
+          <p class="text-gray-600">Laravel 11, Symfony 6.4+, Livewire 3</p>
+        </div>
+        <div class="card text-center">
+          <h3 class="font-bold text-xl mb-3">⚙️ DevOps</h3>
+          <p class="text-gray-600">Docker, GitLab CI/CD, Redis, RabbitMQ</p>
+        </div>
+      </div>
+      
+      <!-- Stack Details (hidden by default) -->
+      <div id="stack-details" class="hidden mt-8 space-y-8">
+        
+        <!-- Langages & Frameworks -->
+        <div class="bg-gray-50 rounded-xl p-6">
+          <h3 class="text-2xl font-bold mb-4">Langages & Frameworks</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="badge">PHP 8.3+ / 8.4</span>
+            <span class="badge">Laravel 11</span>
+            <span class="badge">Symfony 6.4+</span>
+            <span class="badge">Livewire 3</span>
+            <span class="badge">TailwindCSS</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Doctrine</span>
+            <span class="badge">Twig</span>
+          </div>
+        </div>
+        
+        <!-- Concepts & Patterns -->
+        <div class="bg-gray-50 rounded-xl p-6">
+          <h3 class="text-2xl font-bold mb-4">Architecture & Patterns</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="badge">SOLID</span>
+            <span class="badge">Clean Architecture</span>
+            <span class="badge">DDD</span>
+            <span class="badge">Hexagonal Architecture</span>
+            <span class="badge">CQRS</span>
+            <span class="badge">Repository Pattern</span>
+            <span class="badge">Domain Events</span>
+            <span class="badge">DTO</span>
+            <span class="badge">Strategy Pattern</span>
+            <span class="badge">Factory Pattern</span>
+          </div>
+        </div>
+        
+        <!-- DevOps & Infrastructure -->
+        <div class="bg-gray-50 rounded-xl p-6">
+          <h3 class="text-2xl font-bold mb-4">DevOps & Infrastructure</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="badge">Docker</span>
+            <span class="badge">GitLab CI/CD</span>
+            <span class="badge">Git</span>
+            <span class="badge">Redis</span>
+            <span class="badge">RabbitMQ</span>
+            <span class="badge">Elasticsearch</span>
+            <span class="badge">HashiCorp Vault</span>
+            <span class="badge">FrankenPHP</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">MySQL</span>
+          </div>
+        </div>
+        
+        <!-- Environnement & Outils -->
+        <div class="bg-gray-50 rounded-xl p-6">
+          <h3 class="text-2xl font-bold mb-4">Environnement & Outils</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="badge">PhpStorm</span>
+            <span class="badge">VS Code</span>
+            <span class="badge">Linux / macOS</span>
+            <span class="badge">Makefile</span>
+            <span class="badge">Composer</span>
+            <span class="badge">NPM</span>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gradient-to-br from-orange-600 to-orange-800 text-white section-container fade-in">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">Travaillons ensemble</h2>
+      <p class="text-xl mb-8 text-orange-100">
+        Vous avez un projet, besoin d'un audit technique ou d'accompagnement ? Discutons-en.
+      </p>
+      
+      <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 mb-8">
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-bold text-lg mb-2">📧 Email</h3>
+            <a href="mailto:contact@corecraft.dev" class="text-orange-200 hover:text-white transition text-lg">
+              contact@corecraft.dev
+            </a>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg mb-2">💰 Tarifs</h3>
+            <p class="text-orange-100">À partir de 480 €/jour</p>
+            <p class="text-orange-200 text-sm">Adaptable selon votre projet</p>
+          </div>
+        </div>
+      </div>
+      
+      <a href="mailto:contact@corecraft.dev" class="bg-white text-orange-600 hover:bg-orange-50 font-semibold px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-lg inline-block">
+        Me contacter
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-8">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="mb-2">© 2025 CoreCraft - Rolland Delhorbe</p>
+      <p class="text-sm">Micro-entrepreneur • SIRET: 925 173 742 00014 • Avernes, France</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
