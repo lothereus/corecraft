@@ -26,6 +26,7 @@
         <li><a href="#about" class="hover:text-orange-600 transition">À propos</a></li>
         <li><a href="#services" class="hover:text-orange-600 transition">Services</a></li>
         <li><a href="#stack" class="hover:text-orange-600 transition">Expertise</a></li>
+        <li><a href="#rates" class="hover:text-orange-600 transition">Tarifs</a></li>
         <li><a href="#contact" class="hover:text-orange-600 transition">Contact</a></li>
       </ul>
       
@@ -43,6 +44,7 @@
         <li><a href="#about" class="block hover:text-orange-600 transition">À propos</a></li>
         <li><a href="#services" class="block hover:text-orange-600 transition">Services</a></li>
         <li><a href="#stack" class="block hover:text-orange-600 transition">Expertise</a></li>
+        <li><a href="#rates" class="block hover:text-orange-600 transition">Tarifs</a></li>
         <li><a href="#contact" class="block hover:text-orange-600 transition">Contact</a></li>
       </ul>
     </div>
@@ -69,37 +71,45 @@
   <section id="about" class="section-container fade-in">
     <div class="max-w-4xl mx-auto">
       <h2 class="text-4xl font-bold mb-8 text-center">À propos</h2>
-      <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
-        <p>
-          Développeur back-end avec près de <strong>15 ans d'expérience</strong>, je me suis spécialisé dans la maîtrise du langage <strong>PHP</strong> sans être lié à un framework, ce qui me permet de m'adapter aux projets que l'on me propose.
-        </p>
-        <p>
-          Mes expériences variées m'ont permis de développer mes compétences sur des technologies comme <strong>Elasticsearch, RabbitMQ, Redis</strong>, et bien d'autres. Durant mon passage par la <strong>Police Technique et Scientifique</strong>, j'ai acquis de solides compétences en algorithmie, notamment sur un sujet de pointe : la comparaison ADN.
-        </p>
-        <p>
-          Je suis quelqu'un de <strong>profondément curieux</strong>, toujours en quête de nouvelles techniques et méthodologies qui pourraient améliorer mon travail et les projets sur lesquels je suis impliqué.
-        </p>
-        <p>
-          J'affectionne particulièrement les <strong>projets de conception avancée ou de R&D</strong>, mais je m'engage aussi auprès des <strong>TPE/PME</strong> pour les aider à se concentrer sur leur business (site vitrine, solution de gestion interne, CRM, planning...) et des <strong>associations</strong>.
-        </p>
-        <p class="text-xl font-semibold text-orange-600">
-          Je vous propose de vous accompagner dans vos projets de toute taille et de vous aider à faire les bons choix en vous apportant mon expérience et ma rigueur.
+      
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <div class="space-y-4 p-6 text-lg text-gray-700 leading-relaxed">
+          <p>
+            Développeur back-end avec près de <strong>15 ans d'expérience</strong>, je conçois des solutions sur mesure, performantes et évolutives.
+          </p>
+          <p>
+            Mon approche mêle expertise technique, pragmatisme et accompagnement humain.
+          </p>
+        </div>
+        <div class="rounded-2xl border-2 border-orange-200 bg-orange-50 p-6 text-gray-700 leading-relaxed">
+          <p class="mb-4">
+            Spécialisé dans <strong>PHP</strong> depuis plus d'une décennie, je maîtrise ses frameworks (<strong>Laravel, Symfony</strong>) sans y être limité.
+          </p>
+          <p class="mb-4">
+            J'adapte chaque développement à vos besoins spécifiques, qu'il s'agisse d'un produit innovant, d'une refonte ou d'un outil métier.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Highlight après les colonnes - style épuré centré -->
+      <div class="text-center mb-12 max-w-3xl mx-auto">
+        <p class="text-2xl text-gray-800 leading-relaxed italic">
+          <span class="font-semibold text-orange-600">Curieux et rigoureux</span>, j'explore en continu de nouvelles méthodologies pour proposer des solutions durables et lisibles.
         </p>
       </div>
       
-      <div class="grid md:grid-cols-3 gap-6 mt-12">
+      <div class="grid md:grid-cols-3 gap-6">
         <div class="card text-center">
-          <h3 class="font-bold text-xl mb-2">🎯 Tarifs</h3>
-          <p class="text-gray-700 font-semibold">À partir de 480 €/jour</p>
-          <p class="text-gray-600 text-sm mt-1">Adaptable selon votre projet</p>
+          <h3 class="font-bold text-xl mb-2">⚖️ Tarif</h3>
+          <p class="text-gray-700">Adapté à votre projet</p>
         </div>
         <div class="card text-center">
           <h3 class="font-bold text-xl mb-2">📍 Localisation</h3>
-          <p class="text-gray-700">Vexin • Remote-friendly</p>
+          <p class="text-gray-700">Cergy-Pontoise • À distance</p>
         </div>
         <div class="card text-center">
           <h3 class="font-bold text-xl mb-2">💼 Statut</h3>
-          <p class="text-gray-700">Micro-entrepreneur</p>
+          <p class="text-gray-700">Micro-entreprise</p>
         </div>
       </div>
     </div>
@@ -109,38 +119,46 @@
   <section id="services" class="bg-gray-100 section-container fade-in">
     <h2 class="text-4xl font-bold mb-6 text-center">Mon approche</h2>
     <p class="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-      De la définition de vos besoins métiers à la conception d'une solution pérenne, je vous accompagne à chaque étape de votre projet.
+      de la définition de vos besoins métiers à la conception d'une solution pérenne...
     </p>
     
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
       
       <div class="card">
-        <div class="text-4xl mb-4">🎯</div>
-        <h3 class="text-xl font-bold mb-3">Définir vos besoins</h3>
+        <div class="flex items-start gap-3 mb-3">
+          <span class="text-4xl">🎯</span>
+          <h3 class="text-xl font-bold pt-1">Définir vos besoins</h3>
+        </div>
         <p class="text-gray-600">
-          Nous définissons ensemble vos besoins métiers. Je suis force de proposition pour vos fonctionnalités.
+          Nous définissons ensemble vos besoins métiers.<br>Je suis force de proposition pour vos fonctionnalités.
         </p>
       </div>
       
       <div class="card">
-        <div class="text-4xl mb-4">🏗️</div>
-        <h3 class="text-xl font-bold mb-3">Concevoir pour durer</h3>
+        <div class="flex items-start gap-3 mb-3">
+          <span class="text-4xl">🏗️</span>
+          <h3 class="text-xl font-bold pt-1">Bâtir solide</h3>
+        </div>
         <p class="text-gray-600">
           Je conçois une solution pour le long terme, en privilégiant qualité, maintenabilité et évolutivité.
         </p>
       </div>
       
       <div class="card">
-        <div class="text-4xl mb-4">🤝</div>
-        <h3 class="text-xl font-bold mb-3">Collaborer</h3>
+        <div class="flex items-start gap-3 mb-3">
+          <span class="text-4xl">🤝</span>
+          <h3 class="text-xl font-bold pt-1">Collaborer</h3>
+        </div>
         <p class="text-gray-600">
           Je me rends disponible pour vous tout le long de notre collaboration, avec rigueur et transparence.
         </p>
       </div>
       
       <div class="card">
-        <div class="text-4xl mb-4">🚀</div>
-        <h3 class="text-xl font-bold mb-3">Faire les bons choix</h3>
+        <div class="flex items-start gap-3 mb-3">
+          <span class="text-4xl">💡</span>
+          <h3 class="text-xl font-bold pt-1">Faire les bons choix</h3>
+        </div>
         <p class="text-gray-600">
           Je vous apporte mon expérience pour vous aider à faire les choix techniques et stratégiques adaptés.
         </p>
@@ -148,7 +166,7 @@
       
     </div>
     
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-6xl mx-auto">
       <h3 class="text-2xl font-bold mb-6 text-center">Mes domaines d'intervention</h3>
       <div class="grid md:grid-cols-3 gap-6">
         
@@ -162,9 +180,9 @@
           <p class="text-gray-600">Projets complexes, architectures avancées, algorithmie, POC techniques</p>
         </div>
         
-        <div class="bg-white rounded-lg p-6 border-l-4 border-purple-600">
-          <h4 class="font-bold text-lg mb-2">🤝 Associations & Collectivités</h4>
-          <p class="text-gray-600">Accompagnement solidaire, solutions digitales au service de l'intérêt général</p>
+        <div class="bg-white rounded-lg p-6 border-l-4 border-blue-600">
+          <h4 class="font-bold text-lg mb-2">🎓 Expertise technique</h4>
+          <p class="text-gray-600">Audit de code, refonte d'architecture, mentoring, coaching d'équipes et montée en compétences</p>
         </div>
         
       </div>
@@ -175,7 +193,7 @@
   <section id="stack" class="section-container fade-in">
     <h2 class="text-4xl font-bold mb-4 text-center">Stack technique & Expertise</h2>
     <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-      Une sélection des technologies et méthodologies que je maîtrise pour donner vie à vos projets.
+      Une sélection des technologies que je maîtrise pour donner vie à vos projets.
     </p>
     
     <div class="max-w-5xl mx-auto">
@@ -206,6 +224,7 @@
           <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="TailwindCSS" class="w-16 h-16 mb-2 transition-transform group-hover:scale-110">
           <span class="text-sm text-gray-600 font-medium">Tailwind</span>
         </div>
+        <!--
         <div class="flex flex-col items-center group">
           <img src="https://cdn.simpleicons.org/redis/DC382D" alt="Redis" class="w-16 h-16 mb-2 transition-transform group-hover:scale-110">
           <span class="text-sm text-gray-600 font-medium">Redis</span>
@@ -230,6 +249,7 @@
           <img src="https://cdn.simpleicons.org/gitlab/FC6D26" alt="GitLab" class="w-16 h-16 mb-2 transition-transform group-hover:scale-110">
           <span class="text-sm text-gray-600 font-medium">GitLab CI/CD</span>
         </div>
+        -->
       </div>
       
       <!-- Accordéon Toggle -->
@@ -243,15 +263,15 @@
       <div id="stack-summary" class="grid md:grid-cols-3 gap-6">
         <div class="card text-center">
           <h3 class="font-bold text-xl mb-3">💻 Langages</h3>
-          <p class="text-gray-600">PHP 8.3+, JavaScript, HTML/CSS</p>
+          <p class="text-gray-600">PHP 8.4+, Javascript, HTML/CSS</p>
         </div>
         <div class="card text-center">
           <h3 class="font-bold text-xl mb-3">🧩 Frameworks</h3>
-          <p class="text-gray-600">Laravel 11, Symfony 6.4+, Livewire 3</p>
+          <p class="text-gray-600">Laravel 11/12, Symfony 6.4, Livewire</p>
         </div>
         <div class="card text-center">
           <h3 class="font-bold text-xl mb-3">⚙️ DevOps</h3>
-          <p class="text-gray-600">Docker, GitLab CI/CD, Redis, RabbitMQ</p>
+          <p class="text-gray-600">Docker, Redis, RabbitMQ<br>GitLab CI/CD</p>
         </div>
       </div>
       
@@ -262,13 +282,12 @@
         <div class="bg-gray-50 rounded-xl p-6">
           <h3 class="text-2xl font-bold mb-4">Langages & Frameworks</h3>
           <div class="flex flex-wrap gap-3">
-            <span class="badge">PHP 8.3+ / 8.4</span>
-            <span class="badge">Laravel 11</span>
-            <span class="badge">Symfony 6.4+</span>
-            <span class="badge">Livewire 3</span>
+            <span class="badge">PHP 7+ / 8+ / 8.4</span>
+            <span class="badge">Laravel 11/12</span>
+            <span class="badge">Symfony 6.4</span>
+            <span class="badge">Livewire</span>
             <span class="badge">TailwindCSS</span>
-            <span class="badge">JavaScript</span>
-            <span class="badge">Doctrine</span>
+            <span class="badge">Javascript</span>
             <span class="badge">Twig</span>
           </div>
         </div>
@@ -278,32 +297,38 @@
           <h3 class="text-2xl font-bold mb-4">Architecture & Patterns</h3>
           <div class="flex flex-wrap gap-3">
             <span class="badge">SOLID</span>
-            <span class="badge">Clean Architecture</span>
+            <span class="badge">Clean</span>
             <span class="badge">DDD</span>
-            <span class="badge">Hexagonal Architecture</span>
+            <span class="badge">Hexagonal</span>
             <span class="badge">CQRS</span>
-            <span class="badge">Repository Pattern</span>
-            <span class="badge">Domain Events</span>
-            <span class="badge">DTO</span>
-            <span class="badge">Strategy Pattern</span>
-            <span class="badge">Factory Pattern</span>
+            <span class="badge">Events</span>
           </div>
         </div>
         
-        <!-- DevOps & Infrastructure -->
+        <!-- Infrastructure -->
         <div class="bg-gray-50 rounded-xl p-6">
-          <h3 class="text-2xl font-bold mb-4">DevOps & Infrastructure</h3>
+          <h3 class="text-2xl font-bold mb-4">Infrastructure</h3>
           <div class="flex flex-wrap gap-3">
             <span class="badge">Docker</span>
-            <span class="badge">GitLab CI/CD</span>
-            <span class="badge">Git</span>
             <span class="badge">Redis</span>
             <span class="badge">RabbitMQ</span>
             <span class="badge">Elasticsearch</span>
-            <span class="badge">HashiCorp Vault</span>
+            <span class="badge">Vault</span>
             <span class="badge">FrankenPHP</span>
             <span class="badge">PostgreSQL</span>
             <span class="badge">MySQL</span>
+          </div>
+        </div>
+
+        <!-- DevOps -->
+        <div class="bg-gray-50 rounded-xl p-6">
+          <h3 class="text-2xl font-bold mb-4">DevOps</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="badge">GitLab CI/CD</span>
+            <span class="badge">Git</span>
+            <span class="badge">Makefile</span>
+            <span class="badge">Composer</span>
+            <span class="badge">NPM</span>
           </div>
         </div>
         
@@ -314,9 +339,6 @@
             <span class="badge">PhpStorm</span>
             <span class="badge">VS Code</span>
             <span class="badge">Linux / macOS</span>
-            <span class="badge">Makefile</span>
-            <span class="badge">Composer</span>
-            <span class="badge">NPM</span>
           </div>
         </div>
         
@@ -330,28 +352,117 @@
     <div class="max-w-3xl mx-auto text-center">
       <h2 class="text-4xl font-bold mb-6">Travaillons ensemble</h2>
       <p class="text-xl mb-8 text-orange-100">
-        Vous avez un projet, besoin d'un audit technique ou d'accompagnement ? Discutons-en.
+        Vous avez un projet, besoin d'un audit technique ou d'accompagnement ?
+      </p>
+      <a href="mailto:contact@corecraft.dev" class="bg-white text-orange-600 hover:bg-orange-50 font-semibold px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-lg inline-block">
+        Discutons-en !
+      </a>
+    </div>
+  </section>
+
+  <!-- Engagement Section -->
+  <section id="engagement" class="section-container fade-in bg-gradient-to-br from-purple-50 to-blue-50">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-6 text-center">Engagement local & citoyen</h2>
+      <p class="text-xl text-gray-700 text-center mb-8 max-w-2xl mx-auto">
+        Au-delà du code, je m'investis dans la vie locale et associative.
       </p>
       
-      <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 mb-8">
-        <div class="space-y-4">
-          <div>
-            <h3 class="font-bold text-lg mb-2">📧 Email</h3>
-            <a href="mailto:contact@corecraft.dev" class="text-orange-200 hover:text-white transition text-lg">
-              contact@corecraft.dev
-            </a>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Vie municipale -->
+        <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-purple-600">
+          <div class="flex items-start gap-3 mb-3">
+            <span class="text-4xl">🏛️</span>
+            <h3 class="text-xl font-bold pt-1">Acteur local</h3>
           </div>
-          <div>
-            <h3 class="font-bold text-lg mb-2">💰 Tarifs</h3>
-            <p class="text-orange-100">À partir de 480 €/jour</p>
-            <p class="text-orange-200 text-sm">Adaptable selon votre projet</p>
+          <p class="text-gray-700 leading-relaxed">
+            Élu local depuis <strong>2020</strong>, je connais les <strong>enjeux numériques des collectivités</strong> : transformation digitale, modernisation des services publics, accessibilité et souveraineté des données.
+          </p>
+        </div>
+        
+        <!-- Associations -->
+        <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-yellow-600">
+          <div class="flex items-start gap-3 mb-3">
+            <span class="text-4xl">🤝</span>
+            <h3 class="text-xl font-bold pt-1">Associations & Collectivités</h3>
           </div>
+          <p class="text-gray-700 leading-relaxed">
+            J'accompagne les <strong>associations</strong> et <strong>collectivités</strong> dans leurs projets digitaux : solutions solidaires, outils au service de l'intérêt général, plateformes citoyennes.
+          </p>
         </div>
       </div>
       
-      <a href="mailto:contact@corecraft.dev" class="bg-white text-orange-600 hover:bg-orange-50 font-semibold px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-lg inline-block">
-        Me contacter
-      </a>
+      <div class="mt-8 text-center">
+        <p class="text-gray-600 italic text-lg">
+          "La technologie au service de l'humain et du territoire"
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rates Section -->
+  <section id="rates" class="bg-gray-50 section-container fade-in">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold mb-6 text-center">Tarif & Facturation</h2>
+      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        Transparence et flexibilité : je m'adapte à vos contraintes et à la nature de votre projet.
+      </p>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Tarif principal -->
+        <div class="card">
+          <h3 class="text-2xl font-bold mb-4">TJM indicatif</h3>
+          <p class="text-3xl font-bold text-orange-600 mb-4">480 € / jour</p>
+          <p class="text-gray-700 mb-4">
+            Le tarif est <strong>ajusté selon le projet</strong> : périmètre, complexité, urgence, engagement long terme.
+          </p>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-orange-600 mr-2">✓</span>
+              <span>Facturation au forfait ou au temps passé</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-orange-600 mr-2">✓</span>
+              <span>Micro-entreprise, sans TVA</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-orange-600 mr-2">✓</span>
+              <span>Remote-first, déplacements possibles</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Process de chiffrage -->
+        <div class="card bg-orange-50 border-2 border-orange-200">
+          <h3 class="text-2xl font-bold mb-4">Comment je chiffre ?</h3>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-orange-600 text-white font-bold mr-3 flex-shrink-0">1</span>
+              <div>
+                <p class="font-semibold text-gray-900">Écoute & cadrage rapide</p>
+                <p class="text-sm text-gray-700">Je prends le temps de comprendre vos besoins métiers et vos objectifs</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-orange-600 text-white font-bold mr-3 flex-shrink-0">2</span>
+              <div>
+                <p class="font-semibold text-gray-900">Estimation transparente</p>
+                <p class="text-sm text-gray-700">TJM adapté + hypothèses claires sur le périmètre</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-orange-600 text-white font-bold mr-3 flex-shrink-0">3</span>
+              <div>
+                <p class="font-semibold text-gray-900">Option forfaitaire</p>
+                <p class="text-sm text-gray-700">Si le périmètre est stabilisé, je peux proposer un forfait</p>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="mt-6 inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-6 py-3 rounded-lg transition">
+            Obtenir un devis
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
